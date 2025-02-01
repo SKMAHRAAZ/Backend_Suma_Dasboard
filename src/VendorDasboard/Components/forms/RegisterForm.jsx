@@ -56,18 +56,19 @@ const RegisterForm = () => {
         <ToastContainer/>
 
         {loading && <div className='loader-section'>
-               <Audio
-              height="140"
-              width="200"
-              radius="15"
-              color="green"
-              ariaLabel="loading"
-              wrapperStyle
-              wrapperClass
-            />
-
-            <p>Register in process please wait</p>
-            </div>}
+          <Audio
+    height="140"
+    width="200"
+    radius="15"
+    color="green"
+    ariaLabel="loading"
+    wrapperStyle
+    wrapperClass
+  />
+  
+   <p>Registration is in process please wait!....</p>
+  
+          </div>}
    
     {!loading && <form onSubmit={HandleSubmit}>
       <h1>Register</h1>

@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import { ThreeCircles ,Audio} from 'react-loader-spinner'
 import { ToastContainer, toast } from 'react-toastify';
 
-const Register = () => {
+const RegisterForm = () => {
     const navigate = useNavigate()
     const[username, setUsername] = useState("")
     const[email, setEmail] = useState("")
@@ -17,7 +17,7 @@ const Register = () => {
         setShowPassword(!showPassword)
     }
 
-    const register = () => toast("Vendor Registered Successfully!");
+    
 
     const HandleSubmit = async(e)=>{
         e.preventDefault()
@@ -90,4 +90,4 @@ const Register = () => {
   )
 }
 
-export default Register
+export default RegisterForm

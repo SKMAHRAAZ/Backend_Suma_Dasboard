@@ -37,11 +37,12 @@ const LandingPage = () => {
 
 
   const logoutHandler = ()=>{
+    confirm("Are you sure to log-out")
     localStorage.removeItem('loginToken')
     localStorage.removeItem('firmId')
     localStorage.removeItem('firmName')
     setShowlogOut(false)
-    confirm("Are you sure to log-out")
+    
     navigate('/')
   }
 

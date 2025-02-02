@@ -56,6 +56,8 @@ const Login = () => {
         alert("invalid user credentials")
         window.location.reload()
 
+      }else{
+        alert("vendor login failed")
       }
       
     } catch (error) {

@@ -52,12 +52,8 @@ const Login = () => {
         console.log(`checking for firmId: ${vendorFirmId}`)
         localStorage.setItem('firmId',vendorFirmId)
         localStorage.setItem('firmName', vendorFirmname)
-      }else if(vendorData.error === "Invalid user credentials"){
-        alert("invalid user credentials")
-        window.location.reload()
-
       }else{
-        alert("vendor login failed")
+        alert("invalid login credentials")
       }
       
     } catch (error) {
